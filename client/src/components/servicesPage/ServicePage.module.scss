@@ -1,0 +1,47 @@
+#ServiceContainer{
+    margin: 2vh 5vh;
+    #ServiceHeader{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        h1{
+            text-align: center;
+            width: 95%;
+            padding-right: 5vh;
+        }
+        button{
+            height: 5vh;
+            width: 18vh;
+            border-radius: 5vh;
+            margin: auto;
+        }
+    }
+    #ANSConatiner{
+        margin: 8vh 25vh;
+        #AboutContainer{
+            display: flex;
+            justify-content: flex-start;
+            img{
+                width: 20vh;
+                height: 20vh;
+                border-radius: 30vh;
+            }
+            div{
+                margin: 1vh 5vh;
+
+            }
+        }
+        #ServicesContainer{
+            margin: 2vh 1vh;
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 5vh;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

@@ -17,13 +17,28 @@ const scrapping = async (url)=>{
     const two = one[1].children;
     const three = two[1].children;
     const four = JSON.parse(three[0].raw)
-    const services = four.props.pageProps.userData.services;
+    const userData = four.props.pageProps.userData;
     
-    const data = services.map((service)=>{
-        return {title: service.title, price: service.charge, desc: service.description}
-    })
+    const temp = {
+        name : userData.full_name,
+        about : userData.description,
+        avatar : userData.profile_pic
+    }
 
-    return data;
+    const services = userData.services;
+    const data = services.map((service)=>{
+        return {
+            title: service.title, 
+            price: service.charge, 
+            desc: service.description
+        }
+    }) 
+
+    const userDATA = {
+        ...temp,
+        services: data
+    }
+    return userDATA
 
     // parse html
     // const html = await beautiful.parse('<div>hello</div><div>world</div>');

@@ -1,0 +1,33 @@
+#landingContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        margin: 20vh;
+    }
+    form{
+        margin-bottom: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        input{
+            border: 1px solid white;
+            border-radius: 10vh;
+            width: 80vh;
+            height: 10vh;
+            padding: 0 5vh;
+            color: #fff;
+            background-color: #000;
+        }
+        button{
+            width: 35vh;
+            margin: 5vh;
+            height: 9vh;
+            border-radius: 10vh;
+            font-size: large;
+        }
+    }
+}
