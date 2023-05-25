@@ -17,7 +17,7 @@ const LandingPage = ({ setData }) => {
         });
 
         try {
-            const response = await fetch("http://localhost:3001", {
+            const response = await fetch("https://anchorsserver.vercel.app/", {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
