@@ -6,8 +6,8 @@ const Services = ({ service }) => {
   console.log(service)
   return (
     <div id={classes.ServiceContainer}>
-        <h2>Price: {service.price}</h2>
-        <p>Service Name: {service.title}</p>
+        <h2>Price: {service?.price?.display_text + service.price?.amount}</h2>
+        <p>Service Name: {service?.title || "No Title"}</p>
     </div>
   )
 }
